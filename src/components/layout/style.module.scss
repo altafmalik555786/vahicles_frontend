@@ -1,0 +1,185 @@
+@import "@assets/styles/colors";
+
+
+.layoutSetting {
+  :global(.ant-layout) {
+    display: block;
+  }
+
+  // flex-direction: inherit !important;
+  background-color: var(--sideBarBg);
+
+  :global(.ant-layout-sider) {
+    background-color: var(--sideBarBg);
+  }
+
+  :global(.ant-layout-sider-children) {
+    overflow-y: auto !important;
+    max-height: calc(100vh - 60px);
+  }
+
+  :global(.ant-menu-item) {
+    width: 80%;
+    margin: auto;
+    padding-left: 30px;
+
+    &:hover {
+      background-color: var(--sideBarTabHover) !important;
+      box-shadow: var(--sideBarTabBoxShadowHover);
+    }
+  }
+
+  :global(.ant-menu-title-content) {
+    padding-left: 0px;
+    color: var(--sideBarFontColor);
+  }
+
+  .mainMenu {
+    .brandLogo {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--sideBarFontColor) !important ;
+
+      img {
+        width: 85px;
+        height: 80px;
+      }
+
+      h1 {
+        font-size: 28px;
+        color: var(--sideBarFontColor) !important ;
+        i {
+          color: var(--sideBarFontColor) !important ;
+        }
+      }
+    }
+  }
+
+  .routingPagesContainer {
+    background-color: var(--pagesBg);
+    padding-top: 10vh;
+    width: 100%;
+    min-height: 90vh;
+    // background-color: bisque;
+  }
+}
+
+:global(.ant-layout-sider-collapsed) {
+  display: none;
+  .mainMenu {
+    .brandLogo {
+      h1 {
+        display: none;
+      }
+    }
+  }
+
+  :global(.ant-menu-item-only-child) {
+    padding-left: 32px;
+  }
+}
+
+.sidebarSetting {
+  background-color: var(--sideBarBg);
+
+  :global(.ant-layout-sider-trigger) {
+    display: none;
+  }
+
+  :global(.ant-menu-item-selected) {
+    background-color: var(--sideBarSelectedTabBg);
+    box-shadow: var(--sideBarSelectedTabBoxShadow);
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 700;
+
+    span {
+      a {
+        color: var(--sideBarFontColor);
+      }
+
+      a:hover {
+        color: var(--sideBarFontColor);
+      }
+    }
+  }
+
+  :global(.ant-menu-item-back) {
+    color: var(--sideBarFontColor);
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  :global(.ant-menu-item-active) {
+    img {
+      width: 200px;
+      height: 200px;
+    }
+  }
+
+  .menuTitle {
+    margin-left: 20px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--sideBarFontColor);
+  }
+
+  :global(.ant-menu-root) {
+    background-color: var(--sideBarBg);
+  }
+}
+
+:global(.ant-layout-sider) {
+  height: 100vh;
+
+  flex: 0 0 250px !important;
+  max-width: 250px !important;
+  min-width: 250px !important;
+
+  &:global(.ant-layout-sider-collapsed) {
+    flex: 0 0 100px !important;
+    max-width: 100px !important;
+    min-width: 100px !important;
+  }
+
+  @media screen and (max-width: 598px) {
+ 
+    &:global(.ant-layout-sider-has-trigger) {
+      &.mobileHide {
+        flex: 0 0 250px !important;
+        max-width: 250px !important;
+        min-width: 250px !important;
+      }
+
+      &.sidebarSetting {
+        z-index: 200;
+        // position: absolute;
+        -webkit-transition: all 0.4s ease;
+        -moz-transition: all 0.4s ease;
+        transition: all 0.4s ease;
+        min-height: calc(100vh - 60px);
+      }
+    }
+  }
+}
+
+.notificationCard {
+  width: 340px;
+  height: auto;
+  padding-right: 10px;
+
+  :global(.ant-card-body) {
+    padding: 12px;
+  }
+
+  a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: #00c1f9;
+  }
+}

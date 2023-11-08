@@ -1,0 +1,11 @@
+@import "@assets/styles/light-dark-theme";
+.mainWrapper{
+    padding: 20px;
+    .contentWrapper{
+        display: flex;
+        display: -webkit-box;
+        -webkit-line-clamp:1;
+        -webkit-box-orient:vertical;
+        overflow:hidden;
+    }
+} 

@@ -1,0 +1,16 @@
+.mainWrapper{
+   .brandLogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    img{
+      height: 60px;
+      width: 60px; 
+      border-radius: 50%; 
+    }
+   } 
+   :global(.ant-menu){
+    background-color: transparent;
+   }
+}

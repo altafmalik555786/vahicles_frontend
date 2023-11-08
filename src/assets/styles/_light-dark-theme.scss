@@ -1,0 +1,33 @@
+@import "@assets/styles/colors";
+
+$themes: (
+  //////////////////////////// Side Bar ////////////////////////////
+  testcolorObjg:
+    (
+      greyTheme: #dddddd,
+      lightTheme: #2f353b,
+      darkTheme: #181f2c,
+    )
+);
+
+@mixin styles($mode) {
+  @each $key, $map in $themes {
+    @each $prop, $color in $map {
+      @if $prop == $mode {
+        --#{$key}: #{$color};
+      }
+    }
+  }
+}
+
+.dark-theme {
+  @include styles("darkTheme");
+}
+
+.light-theme {
+  @include styles("lightTheme");
+}
+
+.grey-theme {
+  @include styles("greyTheme");
+}

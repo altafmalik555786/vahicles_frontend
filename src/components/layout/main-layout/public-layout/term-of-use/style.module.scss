@@ -1,0 +1,54 @@
+.mainWrraper {
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    h1{
+        font-size: 30px;
+    }
+    p {
+        font-size: 18px;
+    }
+    .collapseWrraper{
+    width: 80%;
+
+        h1{
+            font-size: 30px;
+        }
+        p {
+            font-size: 18px;
+        }
+        span{
+            color: blue;
+        }
+    
+            .plusIcon {
+              width: 20px;
+              height: 20px;
+              border-radius: 50%;
+              background: rgba(75,117,139,.1);
+              display: flex;
+              justify-content: center;
+              text-align: center;
+              align-items: center;
+            }
+          :global(.ant-modal-content) {
+            width: 900px;
+            padding: 35px 24px;
+          }
+          :global(.ant-collapse-header){
+            background-color: #fff;
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+            :global(.ant-collapse-header-text){
+                color: #121212;
+                font-size: 20px;
+            }
+          }
+    }
+   
+}

@@ -1,0 +1,86 @@
+.main {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #152c1e;
+  padding: 10px;
+}
+
+.authHeadeer {
+  padding: 1.4rem, 1.5rem, 0.5rem, 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.authHeadeerLogoImg {
+  height: 65px;
+  width: auto;
+}
+
+.authHeaderTitle {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 27px;
+  text-align: center;
+  margin-bottom: 0px;
+  color: #ffffff;
+}
+
+.authHeaderSubtitleWrapper {
+    max-width: 400px;
+  .authHeaderSubtitle {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    margin-top: 14px;
+    color: #ffffff;
+  }
+}
+
+.LoginButton {
+  font-family: "Inter";
+  // width: 86px;
+  height: 38px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #00b840;
+  border: none;
+}
+
+.SignButton {
+  font-family: "Inter";
+  // width: 90px;
+  height: 38px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #00b840;
+  border: none;
+  margin-left: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainButton {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}

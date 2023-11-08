@@ -1,0 +1,129 @@
+.mainContainer {
+  display: flex;
+  max-width: 500px;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  .container {
+    width: 95%;
+    margin: auto;
+
+    .headingWrapper {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      max-width: 400px;
+      margin: auto;
+
+      img {
+        width: 60px;
+        height: 60px;
+      }
+
+      .janusLogo {
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin-bottom: 0;
+      }
+    }
+
+    .checkEmail {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 27px;
+      text-align: center;
+      color: #000000;
+    }
+
+    .paraText {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 25px;
+      text-align: center;
+      color: #2e2e2e;
+    }
+
+    .formData {
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 0;
+
+      .emailInput {
+        width: 520px;
+        border-radius: 4px;
+      }
+
+      .submitBtn {
+        margin-top: 10px;
+        height: 45px;
+        color: white;
+        background-color: #00b840;
+      }
+
+      :global(.ant-form-item-required) {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #000000;
+      }
+
+      .loginWrraper {
+        .resendClickBtn {
+          background-color: #00b840;
+          width: 100%;
+          color: #fff;
+          height: 45px;
+
+          div {
+            margin-top: 5px;
+          }
+        }
+      }
+    }
+
+    .outerLink {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      gap: 5px;
+
+      .aLink {
+        color: green;
+        cursor: pointer;
+      }
+    }
+
+    .loginWrraper {
+
+      margin-top: 15px;
+
+      .continue {
+        background-color: #00b840;
+        width: 100%;
+        color: #fff;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 500;
+        font-size: 15px;
+
+        div {
+          margin-top: 5px;
+        }
+      }
+    }
+
+  }
+}

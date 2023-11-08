@@ -1,0 +1,311 @@
+.topHeaderBar {
+  min-height: auto;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #5a5e5f;
+  border-bottom: 1px solid #5a5e5f;
+  z-index: 2;
+  .headerContainer {
+    // background-color: #ffcd7c;
+    min-height: 60px;
+    height: 10vh;
+    background-color: #5a5e5f;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .headerMenuContainer {
+      display: inline;
+      float: left;
+    }
+
+    .menuHeader {
+      padding-left: 10px;
+      display: inline;
+      float: left;
+      border: none;
+      background-color: #5a5e5f;
+      :global(.ant-menu-item) {
+        width: auto;
+        margin: 5px 5px;
+        padding: 0px 36px;
+        font-size: 25px !important;
+        font-weight: 500;
+        color: #ffff;
+        border-left: 1px solid #505455;
+        &:hover {
+          color: #ffff !important;
+          background: #505455 !important;
+          border-radius: 5px;
+        }
+        &::after {
+          border: none;
+        }
+      }
+
+      :global(.ant-menu-item-selected) {
+        font-family: "Inter";
+        font-size: 20px !important;
+        font-weight: 600;
+        text-align: left;
+        color: #ffff;
+        padding: 0px 16px;
+        background: #505455 !important;
+        border-radius: 5px;
+      }
+      @media screen and (max-width: 755px) {
+        flex-direction: column !important;
+        position: absolute;
+        z-index: 1;
+        :global(.ant-menu-item) {
+          padding: 0px;
+          line-height: 0px;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          span {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    .rightMenuHeader {
+      display: inline;
+      float: right;
+      list-style: none;
+      margin-top: 7px;
+
+      .userProfileDropDownContainer {
+        margin-right: 24px;
+
+        .userProfileDropDownWrapper {
+          display: flex;
+          flex-direction: row;
+          gap: 24px;
+          align-items: center;
+
+          .billingInfoImg {
+            height: 40px;
+            width: 160px;
+            cursor: pointer;
+          }
+          .billingInfo {
+            height: 40px;
+            background: #ffcd7c;
+            box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.04);
+            border-radius: 5px;
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 20px;
+            color: #2e2e2e;
+          }
+
+          .profileUserNameText {
+            color: #000000;
+            font-size: 20px;
+            font-weight: 500;
+          }
+
+          .profileUserNameText:hover {
+            color: #000000;
+          }
+
+          .spaceUserProfile {
+            gap: 5px !important;
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 855px) {
+      .menuHeader {
+        display: block;
+        width: 95%;
+        left: 0;
+        top: 55px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+
+      .headerMenuContainer {
+        .menuOutlinedIcon {
+          font-size: 25px;
+          margin: 7px 20px;
+          svg {
+            fill: #ffffff;
+          }
+        }
+      }
+
+      .rightMenuHeader {
+        position: absolute;
+        right: 0;
+        top: 7px;
+        padding-right: 10px;
+      }
+    }
+
+    @media screen and (max-width: 425px) {
+      .menuHeader {
+        display: block;
+        width: 100%;
+        position: relative;
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+        margin-top: -40px;
+        height: -webkit-fill-available;
+
+        li {
+          width: 100%;
+          display: block;
+          border: 1px solid #dde2e4;
+          text-align: center;
+        }
+        :global(.ant-menu-item-selected) {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+.profileDropDonwMenu {
+  background: #ffffff;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  padding-bottom: 15px;
+  padding-right: 10px;
+  padding-left: 10px;
+
+  .userData {
+    padding: 18px 18px;
+    font-size: 20px;
+    border-bottom: 1px solid #dde2e4;
+    margin-top: 18px;
+
+    b {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 25px;
+      color: #000000;
+    }
+
+    p {
+      font-family: "Inter";
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      margin-top: -5px;
+      margin-bottom: 0;
+      font-size: 20px;
+      line-height: 20px;
+      color: #2e2e2e;
+    }
+  }
+
+  :global(.ant-dropdown-menu) {
+    box-shadow: none;
+    padding: 0px 9px;
+    font-family: "Inter";
+    margin-top: 10px;
+  }
+
+  :global(.ant-dropdown-menu-item) {
+    span {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 25px;
+      color: #000000;
+      margin-top: 10px;
+    }
+  }
+
+  .itemWithImgIcon {
+    span {
+      display: flex;
+      flex-direction: row;
+      gap: 8px;
+    }
+  }
+}
+.btnClass {
+  background-color: red !important;
+  color: #ffff !important;
+  width: 200px;
+  height: 92px;
+  font-size: 25px;
+}
+
+.welcomeText {
+  padding-left: 10px;
+  img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+  }
+}
+.newMenuWrapper {
+  padding-left: 20px;
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  @media screen and (max-width: 470px) {
+    padding-left: 0px;
+  }
+  .menuSpan {
+    color: #fff;
+    font-size: 18px;
+    white-space: nowrap;
+    cursor: pointer;
+    width: 100%;
+  }
+  .menuSpanActive {
+    width: 100%;
+    color: #fff;
+    font-size: 18px;
+    white-space: nowrap;
+    font-weight: bold;
+    border-bottom: 4px solid brown;
+  }
+  @media screen and (max-width: 470px) {
+    flex-direction: column;
+    .menuSpan {
+      color: #000000;
+      padding: 10px;
+      border-bottom: 1px solid black;
+    }
+    .menuSpanActive {
+      color: #000000;
+      padding: 10px;
+      font-weight: bold;
+      border-bottom: 4px solid brown;
+    }
+  }
+}
+.menuResponsive {
+  display: flex;
+  align-items: center;
+  @media screen and (max-width: 470px) {
+    top: 60px;
+    padding: 10px;
+    position: absolute;
+    flex-direction: column;
+    background-color: #ffffff;
+    border: 1px solid gray;
+    border-end-end-radius: 10px;
+    border-end-start-radius: 10px;
+    width: 100%;
+    align-items: flex-start;
+  }
+}

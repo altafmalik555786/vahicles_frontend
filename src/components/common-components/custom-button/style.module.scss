@@ -1,0 +1,39 @@
+@import "@assets/styles/colors";
+
+.filledCommonButton {
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: green;
+  color: #ffffff;
+  border: green;
+  border-radius: 5px;
+
+  &:hover {
+    // border: 1px solid var(--filledBtnBorder) !important;
+    // background-color: var(--filledBtnBgHover);
+    color: var(--filledBtnColorHover) !important;
+    box-shadow: var(--filledBtnBoxShadowHover)
+  }
+}
+
+.outLinedCommonButton {
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--outlinedBtnBg);
+  color: var(--outlinedBtnColor);
+  border: 1px solid var(--outlinedBtnBorder);
+  border-radius: 5px;
+
+  &:hover {
+    border: 1px solid var(--outlinedBtnBorderHover) !important;
+    box-shadow: var(--outlinedBtnBoxShadowHover);
+    background-color: var(--outlinedBtnBgHover)
+  }
+  
+}

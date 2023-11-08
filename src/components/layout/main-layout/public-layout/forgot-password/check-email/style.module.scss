@@ -1,0 +1,129 @@
+.mainContainer {
+  display: flex;
+  max-width: 500px;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  .container {
+    width: 99%;
+    margin: auto;
+
+    .headingWrapper {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      max-width: 400px;
+      margin: auto;
+
+      img {
+        width: 60px;
+        height: 60px;
+      }
+      .janusLogo {
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin-bottom: 0;
+      }
+    }
+
+    .checkEmail {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 27px;
+      text-align: center;
+    }
+
+    .paraText {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      margin: 0px;
+      margin-top: 5px;
+      font-size: 17px;
+      line-height: 25px;
+      text-align: center;
+      color: #000000;
+    }
+
+    .formData {
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 0;
+
+      .emailInput {
+        width: 520px;
+        border-radius: 4px;
+      }
+      .submitBtn {
+        margin-top: 10px;
+        height: 45px;
+        color: white;
+        background-color: #00b840;
+      }
+
+      :global(.ant-form-item-required) {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 19px;
+        color: #000000;
+      }
+
+      .loginWrraper {
+        .resendClickBtn {
+          background-color: #00b840;
+          width: 100%;
+          color: #fff;
+          height: 45px;
+
+          div {
+            margin-top: 5px;
+          }
+        }
+      }
+    }
+    .outerLink {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      gap: 5px;
+      font-size: 18px;
+      font-weight: 400;
+      font-family: "Inter";
+      font-style: normal;
+      line-height: 27px;
+
+      color: #000000;
+      .aLink {
+        color: green;
+        cursor: pointer;
+      }
+    }
+    .outerLinkBtn {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      gap: 5px;
+      margin-top: -20px;
+      font-size: 18px;
+      font-weight: 400;
+      font-family: "Inter";
+      font-style: normal;
+      line-height: 27px;
+      color: #000000;
+      .aLink {
+        color: green;
+        cursor: pointer;
+      }
+    }
+  }
+}

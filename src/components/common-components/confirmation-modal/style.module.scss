@@ -1,0 +1,53 @@
+.confirmationModal {
+  p{
+    margin: 0px;
+  }
+  .footerBtnWrapper {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    .confirmBtn{
+      background-color: green;
+      border: 1px solid green;
+      color: aliceblue;
+      &:hover{
+      border: 1px solid green;
+      color: aliceblue !important;
+      }
+    }
+    button{
+      border: 1px solid gray;
+      &:hover{
+      border: 1px solid red;
+    }
+    }
+  }
+
+  :global(.ant-modal-title){
+    h3{
+      margin: 0px;
+      font-size: 14px;
+      text-align: center;
+      padding: 10px;
+    }
+  }
+  :global(.ant-modal-close-x) {
+    display: none;
+  }
+  :global(.ant-modal-content) {
+    // background-color: var(--cardBg);
+    padding: 0px;
+  }
+  .modalBodyContent {
+    padding: 5px 10px;
+
+    .warningText {
+        color: red;
+        position: absolute;
+        // bottom: 28px;
+    }
+
+  }
+}

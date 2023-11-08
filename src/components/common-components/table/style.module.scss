@@ -1,0 +1,83 @@
+@import "@assets/styles/colors";
+
+.tableWrapper {
+  table {
+    border:1px solid brown;
+    margin-bottom: 5px;
+    border-radius: 0px ;
+  }
+
+  .table {
+    :global(.ant-table-cell) {
+      border-bottom: 1px solid gray;
+      line-height: 17px;
+      background-color: #ffffff;
+      // &:hover {
+      //   color: var(--fontColorWithBg);
+      //   background-color: var(--titleBarBg) !important;
+      // }
+    }
+
+    :global(.ant-table-container) {
+      background-color: #ffffff;
+    }
+
+    :global(.ant-table-thead) {
+      th {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        background-color: brown;
+        color: #ffffff;
+        // &:hover {
+        //   // color: var(--fontColorWithBg);
+        //   background-color: #ffffff !important;
+        // }
+      }
+      :global(.ant-table-column-sorter) {
+        color: var(--fontColor);
+      }
+    }
+    :global(.ant-table-expanded-row-fixed){
+      background-color: #ffffff  !important;
+    }
+    :global(.ant-table-content){
+      &::-webkit-scrollbar {
+        height: 6px !important;
+    }
+  
+    &::-webkit-scrollbar-thumb {
+        background-color: #999999 !important;
+    }
+    }
+
+    :global(.ant-table-cell-row-hover) {
+
+      background-color: var(--titleBarBg) !important;
+      :global(.dynamicColorOnHover) {
+        color: var(--fontColorWithBg);
+      }
+      p {
+        color: var(--fontColorWithBg);
+      }
+      // border-radius: 5px;
+    }
+
+    :global(.ant-table-column-title) {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 17px;
+    }
+
+    :global(.ant-empty-description) {
+      color: var(--fontColor);
+    }
+  }
+}
+.paginationClass {
+  color: var(--fontColorWithBg);
+}
+:global(.ant-pagination .ant-pagination-item a) {
+  color: var(--fontColorWithBg);
+  background-color: var(--titleBarBg) !important;
+}

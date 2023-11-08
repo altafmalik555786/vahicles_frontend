@@ -1,0 +1,134 @@
+.mainLoginWrraper {
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+  height: 100vh;
+
+  .welcomeWrraper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 40px;
+    gap: 20px;
+
+    img {
+      width: 60px;
+      height: 60px;
+    }
+
+    h2 {
+      font-family: "Inter";
+      font-style: normal;
+      margin: 0px;
+      font-weight: 500;
+      font-size: 30px;
+      color: #000000;
+    }
+  }
+
+  .emailWrraper {
+    margin-top: 20px;
+
+    p {
+      margin-bottom: 8px;
+    }
+  }
+
+  .passwordWrraper {
+    margin-top: 20px;
+
+    p {
+      margin-bottom: 8px;
+      font-family: "Inter";
+    }
+  }
+
+  .loginWrraper {
+    p {
+      margin-bottom: 30px;
+      margin-top: 14px;
+      color: #00b840;
+      font-weight: 400;
+      font-size: 18px;
+      font-family: "Inter";
+      cursor: pointer;
+      margin-left: 10px;
+    }
+
+    .loginBtn {
+      background-color: #00b840;
+      width: 100%;
+      color: #fff;
+      height: 45px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+      font-weight: 500;
+
+      div {
+        margin-top: 5px;
+      }
+    }
+  }
+
+  .signupWrraper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      font-weight: 400;
+      font-size: 18px;
+      font-family: "Inter";
+      color: #000000;
+    }
+
+    span {
+      color: #00b840;
+      margin-left: 4px;
+      font-size: 18px;
+      font-family: "Inter";
+      cursor: pointer;
+    }
+  }
+
+  .loginForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+      :global(.ant-form-item-required) {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 19px;
+      color: #000000;
+
+      
+    }
+    .passwordInput{
+      font-size: 16px;
+    }
+  }
+
+  :global(.ant-form-item-control) {
+    margin-bottom: -10px;
+    font-size: 18px;
+    font-family: "Inter";
+  }
+
+  :global(.ant-input) {
+    font-size: 16px;
+    font-family: "Inter";
+  }
+  :global(.ant-form-item-explain-error){
+    font-size: 15px;
+  }
+  
+}
+ 
